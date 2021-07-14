@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcc203;
+}
+
+#flexer {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    min-width: 15rem;
+    min-height: 20rem;
+    background-color: white;
+    border-radius: 10px;
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eq {
+    width: 15rem;
+}
+
+#eq2 {
+    width: 7rem;
+}
+
+#sol-box {
+    width: 80vw;
+    height: 4rem;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+}
+
+#sol-box:focus {
+    outline: none;
+}
+
+.shake {
+    background-color: rgb(255, 118, 118);
+    animation: shake 500ms;
+}
+
+@keyframes shake {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(2rem);
+    }
+    40% {
+      transform: translate(-2rem);
+    }
+    60% {
+      transform: translate(2rem);
+    }
+    80% {
+      transform: translate(-2rem);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
