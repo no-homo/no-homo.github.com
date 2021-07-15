@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--
+
+
+
+
+
+ 
+NICHT SCHUMMELN, DU SPAST
+░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░▄▀▀▀▀▄░░░
+░░░░░░░░░░▄▀░░▄░▄░█░░
+░▄▄░░░░░▄▀░░░░▄▄▄▄█░░
+█░░▀▄░▄▀░░░░░░░░░░█░░
+░▀▄░░▀▄░░░░█░░░░░░█░░
+░░░▀▄░░▀░░░█░░░░░░█░░
+░░░▄▀░░░░░░█░░░░▄▀░░░
+░░░▀▄▀▄▄▀░░█▀░▄▀░░░░░
+░░░░░░░░█▀▀█▀▀░░░░░░░
+░░░░░░░░▀▀░▀▀░░░░░░░░
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="chem.css">
     <title>Quiz Time!</title>
 </head>
-<body style="height: 100vh; display: flex; justify-content: center; align-items: center; font-size: 5rem; background-color: #fcc203;">
-    Coming Soon!
+<body>
+    <div id="flexer">
+        <div class="card"><img class="eq" src="equations/eq1.png"></div>
+        <div class="card"><img class="eq" id="eq2" src="equations/eq2.png"></div>
+        <div class="card"><img class="eq" src="equations/eq3.png"></div>
+        <div class="card"><img class="eq" src="equations/eq4.png"></div>
+        <div class="card"><img class="eq" src="equations/eq5.png"></div>
+        <div>
+        <input type="text" placeholder="twss" id="sol-box" onkeydown="guess(this)">
+        <p id="hard">Na Bro, it's harder than that</p>
+        </div>
+    </div>
+
+    <script>
+        function guess(el) {
+            if(event.keyCode == 13) {
+                if(el.value.toLowerCase().replace(/\s+/g, '')=="nicecock") {
+                    window.location.replace("http://www.no-homo.github.io/minecraft");
+                } else {
+                    document.getElementById("hard").style.display = "block";
+                    el.classList.add("shake");
+                    setTimeout(function(){ el.classList.remove("shake"); }, 500);
+                }
+            }
+        }
+    </script>
 </body>
 </html>

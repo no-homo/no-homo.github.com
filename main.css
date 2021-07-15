@@ -1,33 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fcc203;
-}
-
-#flexer {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    min-width: 15rem;
-    min-height: 20rem;
-    background-color: white;
-    border-radius: 10px;
-    margin: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.eq {
-    width: 15rem;
-}
-
-#eq2 {
-    width: 7rem;
 }
 
 #sol-box {
@@ -36,7 +9,6 @@ body {
     font-size: 2.5rem;
     border: none;
     border-radius: 10px;
-    margin-bottom: 3rem;
     padding-left: 1rem;
 }
 

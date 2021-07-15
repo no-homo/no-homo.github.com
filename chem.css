@@ -1,0 +1,38 @@
+body {
+    background-color: #fcc203;
+    padding-bottom: 3rem;
+}
+
+#flexer {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    min-width: 15rem;
+    min-height: 20rem;
+    background-color: white;
+    border-radius: 10px;
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eq {
+    width: 15rem;
+}
+
+#eq2 {
+    width: 7rem;
+}
+
+#hard {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-left: 2rem;
+    display: none;
+}

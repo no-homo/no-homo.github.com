@@ -1,0 +1,86 @@
+body {
+    background-image: url("bg.png");
+    background-repeat: repeat;
+    background-size: 20%;
+}
+
+#letter {
+    height: 90vh;
+    width: 90vh;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    background-image: url("paper.png");
+    background-size: 100%;
+    position: absolute;
+    top: 5vh;
+    left: calc((100vw - 90vh) / 2);
+    display: none;
+    font-family: 'Minecraft';
+    font-size: 2rem;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#blockcanvas {
+    display: flex;
+    flex-flow: row;
+    justify-content: start;
+}
+
+.block-row {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+}
+
+.blockspace {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.block {
+    grid-area: 1 / 1 / 2 / 2;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    background-image: none;
+    background-size: 100%;
+}
+
+.breakol {
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    background-size: 100%;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+}
+
+.chest {
+    grid-area: 1 / 1 / 2 / 2;
+    /* width: 100%;
+    height: 100%; */
+    /* position: relative;
+    top: -100%; */
+    z-index: -1;
+    background-image: url("chest.png");
+    background-size: 100%;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("Minecraft.ttf");
+}
+
+#counter {
+    position: fixed;
+    font-family: "Minecraft";
+    color: white;
+    margin: 0;
+    top: 1rem;
+    left: 2rem;
+    font-size: 3rem;
+}
