@@ -1,4 +1,4 @@
-// haha der code ist ur nice bin stolz
+// du hast hergefunden, genieß meinen coolen code B)
 
 var finds = 0;
 
@@ -21,7 +21,7 @@ function setblocks() {
     var wlen = 20;
     var sidelen = window.innerWidth / wlen;
     var hlen = Math.ceil(window.innerHeight / sidelen);
-
+    
     var spacehtml = '<div class="blockspace" onclick="mine(this)"></div>';
     var chesthtml = '<div class="chest" onclick="open(this)"></div>'
     var chests = 3;
@@ -34,6 +34,10 @@ function setblocks() {
         + `
         </div>`
     }
+    // if (window.innerHeight > window.innerWidth) {
+    //     canv.style.flexFlow = "column";
+    //     document.getElementsByClassName("block-row").style.flexFlow = "row";
+    // }
     // scatter blocks
     canv.childNodes.forEach(row => {
         row.childNodes.forEach(space => {
