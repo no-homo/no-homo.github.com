@@ -9,5 +9,5 @@ function submit() {
         
     //     }
     // });
-    window.location.replace("http://www.no-homo.github.io/minecraft.html");
+    window.location.replace("http://no-homo.github.io/minecraft");
 }
